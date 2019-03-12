@@ -1,6 +1,10 @@
 $(function ($) {
   // 动态轮播图
   banner();
+  // 移动端页签
+  initMobileTab();
+  //初始化bootstrap工具提示
+  $('[data-toggle="tooltip"]').tooltip();
 });
 
 var banner = function () {
@@ -27,7 +31,7 @@ var banner = function () {
   };
 
   var render = function () {
-
+    // 数据缓存
     getData(function (data) {
       // 根据当前设备（屏幕宽度），动态渲染数据
       var isMobile = $(window).width() < 768 ? true : false;
@@ -77,4 +81,21 @@ var banner = function () {
     distanceX = 0;
     isMove = false;
   })
+};
+
+var initMobileTab = function () {
+  // 让父元素的宽度与所有的子元素宽度之和相等,解决换行问题
+  var $navTab = $('.wjs_product .nav-tabs');
+  var navTabWidth = 0;
+  $navTab.find('li').each(function (i, item) {
+    var $currentLi = $(item);
+    navTabWidth += $currentLi.outerWidth(true);
+  });
+  $navTab.width(navTabWidth);
+  // 使用插件iscroll使其能左右滑动
+  new IScroll($('.nav-tabs-parent')[0],{
+    scrollX:true,
+    scrollY:false,
+    click:true
+  });
 };
