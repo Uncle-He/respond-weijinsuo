@@ -1,6 +1,12 @@
 # respond-weijinsuo
 响应式微金所官网页面
 
+# PC端
+<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/images/PCindex.png" width=50% /></div>
+
+# M端
+<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/images/Mindex.png" width=50% /></div>
+
 # 功能点
 * 顶部通栏
    * 在中屏设备和大屏设备下显示一行四列，在小屏和超小屏设备下隐藏
