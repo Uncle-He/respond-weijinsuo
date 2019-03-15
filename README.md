@@ -2,10 +2,10 @@
 响应式微金所官网页面
 
 # PC端
-<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/images/PCindex.png" width=50% /></div>
+<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/PCindex.png" width=50% /></div>
 
 # M端
-<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/images/Mindex.png" width=50% /></div>
+<div align=center><img src="https://github.com/Uncle-He/respond-weijinsuo/blob/master/media/Mindex.png" width=50% /></div>
 
 # 功能点
 * 顶部通栏
